@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <style>
+        .header {
+            background: rgb(202, 193, 193);
+            font-size: 35px;
+            text-align: center;
+            font-weight: 500;
+            background-image: linear-gradient(to right, #553c9a, #d12929, #00c2cb, #b1192d, #553c9a);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+
+        }
+
+
+        /* Add a black background color to the top navigation */
+        .nav {
+            background-color: #34585a;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .nav a:hover {
+            background-color: rgba(213, 231, 235, 0.575);
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .nav a.active {
+            background-color: rgba(213, 231, 235, 0.575);
+            ;
+            color: white;
+        }
+
+        .searchBar a,
+        .searchBar input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+
+        .footer-dark {
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #282d32;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+
+        .card img {
+            height: 280px;
+        }
+
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 20px;
+            height: 30px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 40%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: justify;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    </style>
+    <title>Article</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>@TorontoDiaries</h2>
+    </div>
+
+    <div class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/registration">Registration</a>
+          </li>
+    </div>
+    <div>
+        <br>
+    </div>
+
+<form name="myForm" action="/login" enctype="application/x-www-form-urlencoded" method="post">
+  
+    <div class="user info">
+      <div class="row text-center">
+        <div class="p-3 col-sm-12 col-md-12">
+          <label for="email" class="form-label">Username: </label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            value=""
+            autofocus="">
+          </div>
+          </div>
+          </div>>
+</form>>
+
+
+ <section>
+      <h1>TorontoDiaries</h1>
+      <hr />
+      <p>Name - {{fname}} {{lname}}</p>
+      <br />
+      <p>Username - {{username}}</p>
+      <br />
+      <p style="color:#282d32">Dont forget to like and Share</p>
+            <a href="/logout" class="button">Logout</a>
+    </section>
+</body>
+</html>>

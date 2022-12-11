@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+    <title>Document</title>
+    <style>
+    .header{
+    background: rgb(202, 193, 193);
+font-size: 35px;
+text-align: center;
+font-weight: 500;
+background-image: linear-gradient(to right ,#553c9a, #d12929, #00c2cb, #b1192d, #553c9a);
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;}
+
+.heading{
+text-align: center;
+padding: 5px;
+}
+.box{
+    padding: 30px;
+    
+}
+
+</style>
+</head>
+<body>
+    
+        <div class="header">
+                <h2>@TorontoDiaries</h2>
+                
+        </div>
+
+        <div class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registration">Registration</a>
+              </li>
+        </div>
+        <div>
+            <br>
+        </div>
+
+
+        <hr>
+        <br>
+    <h2 class="heading">Registration Form</h2>
+    <form
+    name="myForm"
+    action="/registration"
+    enctype="application/x-www-form-urlencoded"
+    method="post"
+  >
+
+
+        
+<div class="box">  <h4 class="section">Personal Info</h4>
+    <br>
+    <div class="row text-center">
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="fname" class="form-label">First Name: </label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="First Name"
+            value=""
+            autofocus=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="lname" class="form-label">Last Name: </label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Last Name"
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="Email" class="form-label">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="Email"
+            placeholder="Email Address"
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="phone" class="form-label">Phone Number: </label>
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phone"
+            placeholder="Phone Number"
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="Address1" class="form-label">Address Line 1: </label>
+          <input
+            type="address"
+            name="Address1"
+            id="Address1"
+            placeholder=""
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="Address2" class="form-label">Address Line 2: </label>
+          <input
+            type="address"
+            name="Address2"
+            id="Address2"
+            placeholder=""
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="city" class="form-label">City: </label>
+          <input type="city" name="city" id="city" placeholder="" value="" />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="postalcode" class="form-label">Postal Code: </label>
+          <input
+            type="postalcode"
+            name="postalcode"
+            id="postalcode"
+            placeholder=""
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="country" class="form-label">Country: </label>
+          <input
+            type="country"
+            name="country"
+            id="country"
+            placeholder=""
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="password" class="form-label">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            value=""
+          />
+        </div>
+        <div class="p-3 col-sm-12 col-md-6">
+          <label for="confirmpassword" class="form-label"
+            >Confirm Password:
+          </label>
+          <input
+            type="password"
+            name="confirmpassword"
+            id="confirmpassword"
+            placeholder="Confirm"
+            value=""
+          />
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <div class="footer-dark">
+    <footer>
+            <table class="row">
+                
+               
+
+                    <tr>
+                        <th>Contact us</th>
+                        <th>About</th>
+                    </tr>
+                    
+                    <tr class="info">
+                        <td>
+                        <a href="https://www.instagram.com/_toronto_diaries/" style="color:aliceblue"> @_toronto_diaries </a></td>
+                        <td><a href="#" style="color:aliceblue">Company</a></td>
+                       
+                      
+                    </tr>
+                
+                    
+                
+                
+                    
+                    <tr class="info">
+                        <td><a href="#" style="color:aliceblue">+1 456-098-9811</a></td>
+                        <td><a href="#" style="color:aliceblue">Team</a></td>
+                        
+                    </tr>
+                    <tr class="info">
+                            <td><a href="#" style="color:aliceblue"> tdairies@gmail.com</a></td>
+                            <td><a href="#" style="color:aliceblue">Careers</a></td>
+                    </tr>
+                
+                </table>
+             <p class="copyright">_toronto_diaries</p>
+        
+    </footer>
+</div>
+
+</body>
+
+</html>
+</body>
+</html>

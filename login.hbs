@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+      .header{
+    background: rgb(202, 193, 193);
+font-size: 35px;
+text-align: center;
+font-weight: 500;
+background-image: linear-gradient(to right ,#553c9a, #d12929, #00c2cb, #b1192d, #553c9a);
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;}
+.heading{
+text-align: center;
+padding: 5px;
+}
+
+.frm{
+  top: 10%;  
+  left: 10%;
+  margin: 10px;
+  padding-top: 5px;
+}
+  
+.btn{
+    top: 50%;  
+  left: 50%;
+  margin: 10px;
+  padding-top: 5px;
+    align-content: center;
+}
+
+
+</style>
+    <title>Login</title>
+</head>
+<body>
+        <div class="header">
+                <h2>@TorontoDiaries</h2>
+                
+        </div>
+        <hr>
+        <br>
+    <h1 class="heading">Login</h1>
+    <br><br>
+    <div class="position-absolute top-50 start-50 translate-middle">
+    <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username"
+              value="{{data.user}}"
+              autofocus=""
+            />
+            {{#unless data.user}}
+              <div style="color:red;">
+                
+                Enter your username.
+              </div>
+            {{/unless}}
+            {{#if data.expression}}
+              <div style="color:red;">
+                
+                No special characters are allowed.
+              </div>
+            {{/if}}
+          </div>
+
+          <div class="p-3 col-sm-12 col-md-12">
+            <label for="password" class="form-label">Password: </label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="password"
+              value="{{data.pass}}"
+              autofocus=""
+            />
+            {{#unless data.pass}}
+              <div style="color:red;">
+              
+                Enter your password.
+              </div>
+            {{/unless}}
+          </div>
+          {{#if error}}
+            <div style="color:red;">
+             
+              {{error}}
+            </div>
+          {{/if}}
+          <div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <button  type="button" class="btn btn-dark">Login</button>
+    <br>
+    <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+</div>
+</body>
+</html>
